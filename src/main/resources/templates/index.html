@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Food Website</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 th:text="${message}"></h1>
+    </header>
+    <main>
+        <div class="food-card" onclick="showDetails()">
+            <img src="/images/food.jpg" alt="Food Image">
+            <h2>Special Pasta</h2>
+            <p>Click to learn more about this dish!</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Food Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
